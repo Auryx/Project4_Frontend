@@ -20,3 +20,22 @@ Ever found a pretty set of dice that you just couldn't afford at the time, and j
 | /dice/:id/edit | GET | Display a form to edit a designated existing dice set |
 | /dice/:id | PUT | Update a designated dice set's information then redirect to /dice |
 | /dice/:id | DELETE | Delete a designated dice set then redirect to /dice  |
+
+## ERD
+``` mermaid
+erDiagram
+    User {
+        user_id string
+        username string
+        user_password string 
+    }
+    USER ||--o{ DiceSet
+    DiceSet {
+        id string 
+        name string
+        cost float
+        link string
+        description string
+    }
+
+```
