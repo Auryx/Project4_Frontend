@@ -29,7 +29,7 @@ erDiagram
         username string
         user_password string 
     }
-    USER ||--o{ DiceSet
+    USER ||--o{ DiceSet : account_page
     DiceSet {
         id string 
         name string
