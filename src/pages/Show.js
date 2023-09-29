@@ -19,10 +19,10 @@ function Show (props){
         <div>
         <h2>Update the Dice Set</h2>
         <Form method="post" action={`/update/${post.id}`}>
-            <input type="text" name="name" placeholder={`${post.name}`}/>
-            <input type="text" name="description" placeholder={`${post.description}`}/>
-            <input type="text" name="cost" placeholder={`${post.cost}`}/>
-            <input type="text" name="link" placeholder={`${post.link}`}/>
+            <input type="text" name="name" defaultValue={`${post.name}`}/>
+            <input type="text" name="description" defaultValue={`${post.description}`}/>
+            <input type="text" name="cost" defaultValue={`${post.cost}`}/>
+            <input type="text" name="link" defaultValue={`${post.link}`}/>
             <button>Submit the Updated set</button>
         </Form>
         <Form method="post" action={`/delete/${post.id}`}>

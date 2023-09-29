@@ -1,5 +1,6 @@
 import url from "./url"
-import { redirect } from "react-router-dom";
+import { redirect, useLoaderData } from "react-router-dom";
+import { getSingleId } from "./utils/getSingleId";
 
 //create action
 export const createAction = async({request}) => {
@@ -27,7 +28,7 @@ export const createAction = async({request}) => {
 }
 
 //update action
-export const updateAction = async({request, params}) => {
+export const updateAction = async({request, params, props}) => {
     //get id
     const id = params.id
 
@@ -40,7 +41,7 @@ export const updateAction = async({request, params}) => {
         cost: formData.get("cost"),
         link: formData.get("link"),
         description: formData.get("description")
-    }
+    }    
 
     //make request to update
     await fetch(url+id, {
