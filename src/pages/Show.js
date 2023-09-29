@@ -1,4 +1,4 @@
-import {Link, useLoaderData} from "react-router-dom"
+import {Link, useLoaderData, Form} from "react-router-dom"
 
 function Show (props){
     const post = useLoaderData()
@@ -16,6 +16,19 @@ function Show (props){
         <a href={post.link}>Click here to go to the website!</a>
         <p></p>
         <Link to="/">Back to Index</Link>
+        <div>
+        <h2>Update the Dice Set</h2>
+        <Form method="post" action={`/update/${post.id}`}>
+            <input type="text" name="name" placeholder={`${post.name}`}/>
+            <input type="text" name="description" placeholder={`${post.description}`}/>
+            <input type="text" name="cost" placeholder={`${post.cost}`}/>
+            <input type="text" name="link" placeholder={`${post.link}`}/>
+            <button>Submit the Updated set</button>
+        </Form>
+        <Form method="post" action={`/delete/${post.id}`}>
+            <button>Delete Set</button>
+        </Form>
+    </div>
     </div>
 }
 
