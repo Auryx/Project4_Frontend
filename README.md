@@ -3,9 +3,10 @@ By: Paul Bunda
 ## Pretty Dice
 Ever found a pretty set of dice that you just couldn't afford at the time, and just forgot about them later? Here's the app for you! Pretty Dice allows you to store the dice you want in a concise format with links, images, and the name of the dice that you just can't go without!
 
-### Link
+### Links
 [**Deployment**](https://pretty-dice.vercel.app/)
 [**Backend**](https://project4-backend-km9j.onrender.com/)
+[**Backend Github**](https://github.com/Auryx/Project4_Backend)
 
 ### Technologies Used 
 - Javascript
