@@ -40,3 +40,7 @@ erDiagram
     }
 
 ```
+
+## Future Improvements
+- Auth for unique users
+- More Styling, needs it
