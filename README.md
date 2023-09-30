@@ -9,6 +9,10 @@ Ever found a pretty set of dice that you just couldn't afford at the time, and j
 ### Technologies Used 
 - Javascript
 - React Framework
+- Python
+- Django
+- HTML
+- CSS
 - Hosted on Vercel
 
 ## Backend Endpoints
