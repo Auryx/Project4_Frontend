@@ -25,12 +25,6 @@ Ever found a pretty set of dice that you just couldn't afford at the time, and j
 ## ERD
 ``` mermaid
 erDiagram
-    User {
-        user_id string
-        username string
-        user_password string 
-    }
-    User ||--o{ DiceSet : account_page
     DiceSet {
         id string 
         name string
